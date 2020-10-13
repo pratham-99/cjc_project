@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<header><h2>Company Name</h2></header>
+<link rel="stylesheet" href="{% static 'firstapp/css/style.css' %}">
+
+<ul>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</ul>
+
+<br>
+{% block content %}
+<h5> Its a base page </h5>
+{% endblock %}
+
+{% block secondblock %}
+<h5>write your second block code here</h5>
+{% endblock secondblock %}
+
+{% block thirdblock %}
+<h4>write your third block code here</h4>
+{% endblock thirdblock %}
+
+<br>
+<footer>
+    <h4>Copyright 2020</h4>
+</footer>
+</body>
+</html>

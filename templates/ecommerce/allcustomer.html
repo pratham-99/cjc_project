@@ -1,0 +1,26 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+    <h1>Hello from allcustomer page</h1>
+{% endblock %}
+
+
+{% block content %}
+    <table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Addr</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    {% for custs in cust %}
+        <tr>
+        <td>{{ custs.cname }}</td>
+        <td>{{ custs.caddr }}</td>
+        <td>{{ custs.cemail }}</td>
+        <td>{{ custs.cphone }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

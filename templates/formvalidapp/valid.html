@@ -1,0 +1,14 @@
+{% extends 'firstapp/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    <h1>Hello from new_form</h1>
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit">
+    </form>
+{% endblock %}

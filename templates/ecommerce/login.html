@@ -1,0 +1,17 @@
+{% extends 'firstapp/base.html' %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        Enter Username:<br>
+        <input type="text" name="uname"><br>
+        Enter Password:<br>
+        <input type="password" name="pword"><br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        {% for msg in messages %}
+        <h5 style="color: #1dc116">{{msg}}</h5>
+        {% endfor %}
+
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'firstapp/base.html' %}
+
+{% block content %}
+<h1>HELLO</h1>
+    <table border="1">
+        <tr>
+            <th>Roll_no</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Password</th>
+        </tr>
+        {% for s in form %}
+        <tr>
+            <td>{{s.rn}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.marks}}</td>
+            <td>{{s.pw}}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

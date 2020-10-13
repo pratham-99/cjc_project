@@ -1,0 +1,10 @@
+{% extends 'firstapp/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <form method="post" style="width: 450px; margin-left: 400px" class="jumbotron">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}

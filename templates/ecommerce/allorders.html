@@ -1,0 +1,25 @@
+
+{% block content %}
+    <table border="2" style="margin-left: 100px">
+        <tr>
+            <th>Product Name</th>
+            <th>Batch No</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Seller</th>
+            <th>Customer</th>
+        </tr>
+        {% for o in form %}
+        <tr>
+            <td>{{o.name}}</td>
+            <td>{{o.batch_no}}</td>
+            <td>{{o.qty}}</td>
+            <td>{{o.price}}</td>
+            <td>{{o.seller}}</td>
+            <td>{{o.customer}}</td>
+            <td><a href="{% url 'update' o.id %}"><button>UPDATE</button></a></td>
+            <td><a href="{% url 'delete' o.id %}"><button>DELETE</button></a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

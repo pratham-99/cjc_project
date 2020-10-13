@@ -1,0 +1,15 @@
+{% extends 'firstapp/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    <h1>Hello from add_order</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post" style="margin-left: 50px; width: 500px">
+        {% csrf_token %}
+        {{form|crispy}}<br><br>
+        <input type="submit">
+
+    </form>
+{% endblock %}

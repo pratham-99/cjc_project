@@ -1,0 +1,22 @@
+{% extends 'firstapp/base.html' %}
+
+{% block title %}
+    <h1>Hello from add customer</h1>
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post" class="jumbotron" style="text-align: center; width: 500px">
+        {% csrf_token %}
+        Enter Name:<br>
+        <input type="text" name="cname"><br>
+        Enter addr:<br>
+        <input type="text" name="caddr"><br>
+        Enter Email:<br>
+        <input type="email" name="cemail"><br>
+        Enter Phone_no:<br>
+        <input type="number" name="cphone"><br><br>
+        <input type="submit">
+
+    </form>
+
+{% endblock %}
