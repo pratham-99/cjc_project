@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'EcommerceApp',
     'formvalidapp',
     'crispy_forms',
+    'rest_framework',
+    'api_basic',
 ]
 
 

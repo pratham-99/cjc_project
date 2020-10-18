@@ -11,5 +11,6 @@ urlpatterns = [
     path('sa/',include('secondapp.urls')),
     path('ecomm/',include('EcommerceApp.urls')),
     path('formv/',include('formvalidapp.urls')),
+    path('art/', include('api_basic.urls')),
 
 ]
