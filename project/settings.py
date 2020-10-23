@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'formvalidapp',
     'crispy_forms',
     'rest_framework',
+    'rest_framework.authtoken',
     'api_basic',
 ]
 

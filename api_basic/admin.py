@@ -3,5 +3,5 @@ from .models import Article
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = []
+    list_display = ['title', 'author', 'email']
 admin.site.register(Article, ArticleAdmin)
